@@ -1,0 +1,18 @@
+.ListItem {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 44.99px;
+    text-transform: uppercase;
+    letter-spacing: 1.28px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.ListItem img{
+    max-width: 25px;
+    max-height: 25px;
+}
+.ListItem:hover {
+    color: #f23005;
+}

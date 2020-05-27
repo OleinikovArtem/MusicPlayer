@@ -1,0 +1,31 @@
+.SearchPanel {
+    background-color: #f23005;
+    padding: 24px;
+    display: flex;
+    align-items: flex-end;
+    width: 392px;
+    max-width: 100%;
+    height: 91px;
+}
+.search {
+    background: transparent;
+    color: inherit;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #fff;
+    border-bottom: 1px solid;
+    padding: 0 10px;
+    width: 100%;
+}
+.search::placeholder {
+    font-weight: 300;
+}
+.search__btn {
+    color: #fff;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
+}

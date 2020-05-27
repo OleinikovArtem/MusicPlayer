@@ -1,0 +1,205 @@
+{ 
+"resource" : "https://freemusicarchive.org/",
+"tracks": [ 
+    {   
+        "id": "1",
+        "artist": "Broke For Free",
+        "Track": "Night Owl",
+        "Album": "Directionless",
+        "Genre": ["Electronic", "Minimal Electronic"],
+        "interest": "4494487",
+        "image": "https://i.ytimg.com/vi/BXngqx_NucU/maxresdefault.jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"
+    },
+    {   
+        "id": "2",
+        "artist": "Tours",
+        "Track": "Enthusiast",
+        "Album": "Enthusiast",
+        "Genre": ["Electronic", "Dubstep", "Downtempo"],
+        "interest": "3027276",
+        "image": "https://i.ytimg.com/vi/0z-83mMxRCk/hqdefault.jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3"
+    },
+    {   
+        "id": "3",
+        "artist": "Jahzzar",
+        "Track": "Siesta",
+        "Album": "Traveller's",
+        "Genre": ["Pop", "Indie-Rock", "Folk", "Power-Pop", "Shoegaze"],
+        "interest": "2053176",
+        "image": "https://cdn-img.jamendo.com/albums/s102/102911/covers/1.600.jpg?du=1535508231",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Jahzzar/Travellers_Guide_Excerpt/Jahzzar_-_05_-_Siesta.mp3"
+    },
+    {   
+        "id": "4",
+        "artist": "Monk Turner +",
+        "Track": "It's Your Birthday!",
+        "Album": "Entries",
+        "Genre": ["Pop", "Indie-Rock"],
+        "interest": "1911199",
+        "image": "https://i.ytimg.com/vi/64geIBa7GvE/maxresdefault.jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Monk_Turner__Fascinoma/The_New_Birthday_Song_Contest/Monk_Turner__Fascinoma_-_01_-_Its_Your_Birthday.mp3"
+    },
+    {   
+        "id": "5",
+        "artist": "BoxCat Games",
+        "Track": "Epic Song",
+        "Album": "Nameless: The Hackers RPG Soundtrack",
+        "Genre": ["Soundtrack" ,"Chiptune"],
+        "interest": "1739020",
+        "image": "https://i1.sndcdn.com/artworks-000072501543-fa95lm-t500x500.jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/BoxCat_Games/Nameless_The_Hackers_RPG_Soundtrack/BoxCat_Games_-_10_-_Epic_Song.mp3"
+    },
+    {
+        "id": "6",
+        "artist": "The Kyoto",
+        "Track": "ConnectionHachiko (The Faithtful Dog)",
+        "Album": "Wake Up",
+        "Genre": ["Pop", "Electronic", "New Age", "Instrumental"],
+        "interest": "1679845",
+        "image": "https://i2.wp.com/japaninsides.com/wp-content/uploads/2017/10/hachicko-41.jpg?fit=1627%2C1303&ssl=1",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/The_Kyoto_Connection/Wake_Up/The_Kyoto_Connection_-_09_-_Hachiko_The_Faithtful_Dog.mp3"
+    },
+    {
+        "id": "7",
+        "artist": "Black Ant",
+        "Track": "Fater Lee",
+        "Album": "Free Beats Sel. 3",
+        "Genre": ["Hip-Hop"],
+        "interest": "1392780",
+        "image": "https://cdn51.zvooq.com/pic?type=release&id=6532171&size=500x500&ext=jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Music_for_Video/Black_Ant/Free_Beats_Sel_3/Black_Ant_-_01_-_Fater_Lee.mp3"
+    },
+    {
+        "id": "8",
+        "artist": "Jason Shaw",
+        "Track": "RUNNING WATERS",
+        "Album": "Audionautix: Acoustic",
+        "Genre": ["Country", "Folk"],
+        "interest": "1103208",
+        "image": "https://files.freemusicarchive.org/storage-freemusicarchive-org/images/albums/Jason_Shaw_-_Audionautix_Acoustic_-_20110817152444364.jpg?width=290&height=290",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Jason_Shaw/Audionautix_Acoustic/Jason_Shaw_-_RUNNING_WATERS.mp3"
+    },
+    {
+        "id": "9",
+        "artist": "Gillicuddy",
+        "Track": "Springish",
+        "Album": "...Plays Guitar",
+        "Genre": ["Folk"],
+        "interest": "993620",
+        "image": "https://files.freemusicarchive.org/storage-freemusicarchive-org/images/albums/Gillicuddy_-_Plays_Guitar_-_20170725111157817.jpg?width=290&height=290",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Gillicuddy/Plays_Guitar/Gillicuddy_-_05_-_Springish.mp3"
+    },
+    {
+        "id": "10",
+        "artist": "Podington Bear",
+        "Track": "Starling",
+        "Album": "Solo",
+        "Genre": ["Electronic" ,"Soundtrack", "Minimal Electronic", "Minimalism", "Contemporary Classical", "Instrumental"],
+        "interest": "973134",
+        "image": "https://files.freemusicarchive.org/storage-freemusicarchive-org/images/playlists/playlist_image_file_-_playlist_id-379574_-_20131205181305074.png?width=48&height=48",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Music_for_Video/Podington_Bear/Solo_Instruments/Podington_Bear_-_Starling.mp3"
+    },
+    {
+        "id": "11",
+        "artist": "Kai Engel",
+        "Track": "Moonlight Reprise",
+        "Album": "Irsen's Tale",
+        "Genre": ["Classical", "Ambient", "IDM", "Instrumental"],
+        "interest": "837265",
+        "image": "https://lastfm.freetls.fastly.net/i/u/ar0/8a1933c746dc481880001648d50b95bd.jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Kai_Engel/Irsens_Tale/Kai_Engel_-_04_-_Moonlight_Reprise.mp3"
+    },
+    {
+        "id": "12",
+        "artist": "Broke For Free",
+        "Track": "Something Elated",
+        "Album": "Something EP",
+        "Genre": ["Electronic", "Hip-Hop Beats" ],
+        "interest": "789348",
+        "image": "https://i1.wp.com/themusicninja.wpengine.com/wp-content/uploads/2013/09/broke-for-free.jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Broke_For_Free/Something_EP/Broke_For_Free_-_05_-_Something_Elated.mp3"
+    },
+    { 
+        "id": "13",
+        "artist": "Jahzzar",
+        "Track": "The last ones",
+        "Album": "Smoke Factory",
+        "Genre": ["Rock", "Celtic" , "Pop", "Folk", "Indie-Rock"],
+        "interest": "733823",
+        "image": "https://f4.bcbits.com/img/a1167894299_16.jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Jahzzar/Smoke_Factory_Excerpt/Jahzzar_-_01_-_The_last_ones.mp3"
+    },
+    {   
+        "id": "14",
+        "artist": "Kevin MacLeod",
+        "Track": " Ghost Dance",
+        "Album": "Classical",
+        "Genre": ["Sampler","Classical"],
+        "interest": "724032",
+        "image": "https://files.freemusicarchive.org/storage-freemusicarchive-org/images/playlists/playlist_image_file_-_playlist_id-357731_-_20131223163252188.png?width=48&height=48",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Classical_Sampler/Kevin_MacLeod_-_Ghost_Dance.mp3"
+    },
+    {
+        "id": "15",
+        "artist": "Waylon Thornton",
+        "Track": "Favorite Secrets",
+        "Album": "Mystery Club",
+        "Genre": ["Pop", "Lo-Fi", "Surf"],
+        "interest": "722506",
+        "image": "https://files.freemusicarchive.org/storage-freemusicarchive-org/images/albums/Waylon_Thornton_-_Mystery_Club_-_20110125183425012.jpg?method=crop&width=290&height=290",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Mystery_Club/02_-_Favorite_Secrets.mp3"
+    },
+    {
+        "id": "16",
+        "artist": "BoxCat Games",
+        "Track": "Battle (Boss)",
+        "Album": "Nameless",
+        "Genre": [ "Soundtrack", "Chiptune"],
+        "interest": "663939",
+        "image": "https://files.freemusicarchive.org/storage-freemusicarchive-org/images/albums/BoxCat_Games_-_Nameless_the_Hackers_RPG_Soundtrack_-_20130703115021391.jpg?width=290&height=290",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/BoxCat_Games/Nameless_The_Hackers_RPG_Soundtrack/BoxCat_Games_-_05_-_Battle_Boss.mp3"
+    },
+    {
+        "id": "17",
+        "artist": "Dan Lerch",
+        "Track": "O Tannenbaum",
+        "Album": "A Very",
+        "Genre": ["Electronic", "Folk", "Christmas" ],
+        "interest": "649804",
+        "image": "https://files.freemusicarchive.org/storage-freemusicarchive-org/images/tracks/Track_-_20131217152657897?method=crop&width=290&height=290",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Dan_Lerch/A_Very_Badgerland_Christmas_2011/Dan_Lerch_-_09_-_O_Tannenbaum.mp3"
+    },
+    {
+        "id": "18",
+        "artist": "Hogan Grip",
+        "Track": "Stance Gives You Balance",
+        "Album": "Hogan Grip - Stance Gives You Balance",
+        "Genre": ["International", "Electronic" ],
+        "interest": "596672",
+        "image": "https://www.usbfoot.fr/images/3/7/hogan-grip-stance-gives-you-balance-extended.jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Hogan_Grip/Hogan_Grip_-_Stance_Gives_You_Balance/Hogan_Grip_-_03_-_Stance_Gives_You_Balance.mp3"
+    },
+    {
+        "id": "19",
+        "artist": "The Freak",
+        "Track": "Requiem for a Fish",
+        "Album": "Tales Of A Dead Fish",
+        "Genre": ["International", "Indie-Rock"],
+        "interest": "581300",
+        "image": "https://i.ytimg.com/vi/DvmSJyZLpKY/maxresdefault.jpg",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Music_for_Video/The_Freak_Fandango_Orchestra/Tales_Of_A_Dead_Fish/The_Freak_Fandango_Orchestra_-_01_-_Requiem_for_a_Fish.mp3"
+    },
+    {
+        "id": "20",
+        "artist": "Broke For Free",
+        "Track": "As Colorful As Ever",
+        "Album": "Layers",
+        "Genre": ["Electronic", "Hip-Hop", "Chill"],
+        "interest": "580847",
+        "image": "https://files.freemusicarchive.org/storage-freemusicarchive-org/images/albums/Broke_For_Free_-_Layers_-_20120418184903300.jpg?method=crop&width=290&height=290",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Music_for_Video/Broke_For_Free/Layers/Broke_For_Free_-_01_-_As_Colorful_As_Ever.mp3"
+    }
+    ]
+}

@@ -1,0 +1,16 @@
+.Main {
+    display: grid;
+    grid-template-columns: 330px 1fr 330px;
+    height: calc(100vh - 220px);
+}
+.Main__sidebar {
+    padding: 60px 35px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width: 1300px) {
+    .Main {
+        grid-template-columns: 300px 1fr 300px;
+    }
+}

@@ -1,0 +1,5 @@
+.Box {
+    background-color: #030303;
+    display: flex;
+    padding-bottom: 80px;
+}

@@ -1,0 +1,313 @@
+.Player {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #0a0a0a;
+    display: grid;
+    grid-template-columns: 330px 1fr 330px;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 130px;
+}
+@media(max-width: 1300px) {
+    .Player { 
+        grid-template-columns: 300px 1fr 300px;
+    }
+}
+.TimeLine-controls {
+    display: flex;
+    justify-content: space-between;
+}
+.Main__main {
+    padding-top: 30px ;
+    max-height: calc(100vh - 180px);
+    overflow-y: scroll
+}
+.TrackInfo {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 30px;
+    /* font-family: "Proxima Nova"; */
+}
+.TrackInfo__image {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    margin-right: 23px;
+    overflow: hidden;
+}
+.TrackInfo__image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.TrackInfo__track {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.TrackInfo__artist {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.Track__controls {
+    display: flex;
+}
+.Track__controls button {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.Track__controls button:hover {
+    opacity: 1;
+}
+.Track__prevTrack {
+    background: url(../../images/icons/1Previous.png);
+}
+.Track__Play{
+    background: url(../../images/icons/Play.png);
+    background-size: cover;
+}
+.Track__Pause{
+    background: url(../../images/icons/Pause.png);
+
+}
+.Track__nextTrack {
+    background: url(../../images/icons/Next.png);
+}
+.TimeLine {
+    width: 100%;
+    display: flex;
+    padding: 0 45px;
+    align-items: center;
+    justify-content: space-between;
+}
+.TimeLine__progres-bar {
+    width: calc(100% - 100px);
+    height: 11px;
+    background-color: #292929;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.TimeLine__progres {
+    display: block;
+    background-color: #f23005;
+    border-radius: 20px;
+    height: 100%;
+}
+.Player__btn-box {
+    display: flex;
+    width: max-content;
+    flex-direction: row;
+    align-items: baseline;
+    padding-bottom: 10px;
+}
+.Player__btn {
+    display: block;
+    width: 20px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.Player__btn:hover {
+    opacity: 1;
+}
+.Player__btn + .Player__btn {
+    margin-left: 20px;
+}
+.Player__btn.repeat {
+    width: 34px;
+    height: 31px;
+    background: transparent no-repeat center  url(../../images/icons/Repeat.png);
+
+}
+.Player__btn.shuffle {
+    width: 27px;
+    height: 24px;
+    background: transparent no-repeat center  url(../../images/icons/Shuffle.png);
+}
+.VolumeControls {
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.VolumeControls__btn {
+    width: 28px;
+    height: 25px;
+    background: transparent no-repeat center  url(../../images/icons/Audio_Icon.png);
+    position: relative;
+    cursor: pointer;
+}
+.VolumeControls__btn::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 140%;
+    height: 4px;
+    top: 10px;
+    left: -5px;
+    border-radius: 10px;
+    background-color: #f23005;
+    transform: rotateZ(-45deg);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.VolumeControls__status-bar {
+    width: calc(100% - 50px);
+    height: 9px;
+    background-color: #292929;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.VolumeControls__status {
+    background-color: #f23005;
+    height: 100%;
+    border-radius: inherit;
+    transition: 0.4s ease;
+}
+.VolumeControls__btn-muted .VolumeControls__btn::before {
+    opacity: 1;
+}
+
+@media(max-width: 1050px) {
+    .Player { 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* .TimeLine {
+        width: 100%;
+        order: 3;
+    } */
+    .TimeLine-controls {
+        order: 3;
+        width: 100%;
+        padding-left: 150px;
+        padding-right: 60px;
+    }
+    .VolumeControls {
+        order: 2;
+        width: 100%;
+        padding-left: 150px;
+    }
+    .TimeLine__progres-bar {
+        min-width:60%
+    }
+    .TrackInfo {
+        width: 100%;
+        position: relative;
+        justify-content: center;
+    }
+    .TrackInfo__image {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+    }
+    .TrackInfo__text {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .PlayerApp {
+        position: relative;
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    .Player {
+        position: relative;
+        padding: 10px 0 20px;
+        height: 170px;
+    }
+    .Main {
+        display: flex;
+        height: calc(100vh - 260px);
+    }
+    .Main__sidebar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: #151515;
+        z-index: 10;
+        max-width: 500px;
+        height: 100vh;
+        transition: 1s ease;
+    }
+    .Main__sidebar:first-child {
+        left: -100%;
+    }
+    .Main__sidebar:last-child {
+        right: -100%;
+    }
+    .Main__main {
+        /* height: calc(100vh - 260px); */
+        width: 100%;
+    }
+    .SidebarOpenBtn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #f23005;
+        z-index: 9;
+        transition: 1s ease;
+    }
+    .SidebarOpenBtn.active {
+        top: 95%;
+        z-index: 12;
+
+    }
+    .SidebarOpenBtn.SidebarOpenBtn_left {
+        left: 10px
+    }
+    .SidebarOpenBtn.SidebarOpenBtn_left.active {
+        left: 84%;
+    }
+    .SidebarOpenBtn.SidebarOpenBtn_right {
+        right: 10px;
+    }
+    .TrackInfo__image {
+        display: none;
+    }
+    .TimeLine-controls {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .TimeLine {
+        padding: 10px 0;
+    }
+    .VolumeControls {
+        padding: 0;
+        position: absolute;
+        width: auto;
+        left: 20px;
+        bottom: 25px;
+    }
+    .VolumeControls__status-bar {
+        width: 200px;
+        position: absolute;
+        left: calc(100% + 10px);
+    }
+    .Player__btn-box {
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0;
+    }
+}

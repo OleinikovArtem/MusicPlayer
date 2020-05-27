@@ -1,0 +1,65 @@
+/* @import './ProximaNova/stylesheet.css'; */
+body {
+    font-family: 'Helvetica Neue';
+    background-color: #030303;
+    color: #fff;
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color:inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+  
+.PlayerApp {
+    font-family: Helvetica;
+    background-color: #151515;
+}
+input, button ,textarea, ::placeholder , form{
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper { 
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+@media (min-width: 1230px) {
+    .wrapper {
+        width: 1200px;
+    }
+}
+@media (max-width: 767px) {
+    .wrapper {
+        padding: 0;
+    }
+}
+
+.height100 {
+    min-height: 100vh;
+  }
+.standard-basic {
+color: #fff
+}
+  

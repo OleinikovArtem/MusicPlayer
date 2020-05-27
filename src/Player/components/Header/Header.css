@@ -1,0 +1,27 @@
+.Header {
+    display: flex;
+    align-items: center;
+    max-height: 90px;
+    background-color: #0a0a0a;
+}
+.sideBox {
+    padding: 0 30px;
+    width: 330px;
+    max-width: 100%;
+}
+.middleHeader {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 660px);
+}
+@media (max-width: 1300px) {
+    .sideBox {
+        width: 300px;
+    }
+    .sideBox:last-child {
+        display: none;
+    }
+    .middleHeader {
+        width: calc(100% - 300px);
+    } 
+}

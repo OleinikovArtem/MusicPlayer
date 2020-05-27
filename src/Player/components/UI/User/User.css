@@ -1,0 +1,21 @@
+.User {
+    display: flex;
+    align-items: center;
+}
+.User__avatar {
+    display: block;
+}
+.User__block {
+    display: flex;
+    flex-flow: column;
+    padding-left: 15px;
+    line-height: 22px;
+}
+.User__name {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.User__count {
+    color: #f23005;
+    font-size: 12px;
+}

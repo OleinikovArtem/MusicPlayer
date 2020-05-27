@@ -1,0 +1,19 @@
+.dropList {
+    margin-left: 40px;
+    padding: 14px 0 14px 14px;
+    font-size: 11px;
+    color: #8c8c8c;
+    line-height: 21px;
+    letter-spacing: 1px;
+    border-left: 1px solid #f23005;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.dropList__item {
+    transition: 0.3;
+    cursor: pointer;
+}
+.dropList__item:hover {
+    color: #fff;
+
+}

@@ -1,0 +1,82 @@
+.Box {
+    text-align: right;
+    padding-left: 45px;
+}
+
+.stepBlock {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.step {
+    display: block;
+    background: transparent;
+    border: none;
+    width: 35px;
+    height: 35px;
+    line-height: 26px;
+    font-size: 26px;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.2s;
+    background: url('../../images/arrow.png');
+}
+.step:hover {
+    opacity: 1;
+}
+
+.stepPrev {
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+.slideSubtitle {
+    font-size: 36px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.slideTitle {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.red {
+    color: #f23005
+}
+.text {
+    font-weight: 100;
+    word-break: break-all;
+}
+.btnsBlock {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    width: 160px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid ;
+    background: transparent;
+    font-size: 11px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #f23005; 
+    border-color:  #f23005; 
+}
+@media (max-width: 767px) {
+    .Box {
+        padding-left: 0;
+        padding-top: 50px;
+        text-align: left;
+    }
+    .slideTitle {
+        font-size: 50px;
+    }
+}
