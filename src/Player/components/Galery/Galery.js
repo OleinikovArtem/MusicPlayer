@@ -5,7 +5,7 @@ import './Galery.css'
 import GaleryItem from './GaleryItem'
 
 
-const Galery = ({searchTrackList, theСhoiceTrack}) => {
+const Galery = ({searchTrackList}) => {
 
     return (
         <ul className='Galery'>

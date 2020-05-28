@@ -1,4 +1,6 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { TYPE_REPEAT ,TYPE_RANDOM} from '../../../../store/types'
 
 
 const TypePlayingMusick = ({changeRandom , handleRepeatTrack, random , repeat}) => {
@@ -13,4 +15,19 @@ const TypePlayingMusick = ({changeRandom , handleRepeatTrack, random , repeat}) 
     )
 }
 
-export default TypePlayingMusick
+const mapStateToProps = state => {
+    return {
+        random: state.random,
+        repeat: state.repeat
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        handleRepeatTrack: ()=> dispatch({type: TYPE_REPEAT }),
+        changeRandom: ()=> dispatch({type:TYPE_RANDOM })
+    }
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(TypePlayingMusick)

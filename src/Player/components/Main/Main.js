@@ -11,7 +11,7 @@ import Banner from '../../images/Galery/_Banner.jpg'
 
 
 
-const Main = ({ theСhoiceTrack,}) => {
+const Main = () => {
     const [showSidebar, setShowSidebart] = useState({
         left: false,
         right: false,
@@ -56,7 +56,7 @@ const Main = ({ theСhoiceTrack,}) => {
 
             <div className='Main__main'>
                 <img src={Banner} alt=""  style={{maxWidth: '100%'}}/>
-                <Galery  theСhoiceTrack={theСhoiceTrack}/>
+                <Galery />
             </div>
 
             {showSidebar.mobV ? (
@@ -70,7 +70,7 @@ const Main = ({ theСhoiceTrack,}) => {
             }
 
             <div className='Main__sidebar'style={showRight} >
-               <Playlists  theСhoiceTrack={theСhoiceTrack}/>
+               <Playlists />
             </div>
         </main>
     )

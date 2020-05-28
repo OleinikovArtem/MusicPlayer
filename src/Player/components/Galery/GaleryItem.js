@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
+import { CHANGE_THIS_TRACK } from '../../../store/types'
+ 
 const GaleryItem = ({id , artist, Track, image ,changeTrak} ) => (
     <div style={{
         background: `center / cover no-repeat url(${image}) `, 
@@ -33,7 +34,7 @@ const mapStateToProps = state => {
 }
 const mapDispatchToProps = dispatch => {
     return {
-        changeTrak: (id) => dispatch({type: 'changeTrak', id: id})
+        changeTrak: (id) => dispatch({type: CHANGE_THIS_TRACK, id: id})
     }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(GaleryItem)

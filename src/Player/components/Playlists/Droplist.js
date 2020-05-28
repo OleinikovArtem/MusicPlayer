@@ -1,5 +1,6 @@
-import React,{useContext} from 'react'
+import React from 'react'
 import {connect} from 'react-redux'
+import {CHANGE_THIS_TRACK} from '../../../store/types'
 const DropList = ({ trackList, changeTrak}) => {
 
     return (
@@ -23,7 +24,7 @@ const mapStateToProps = state => {
 }
 const mapDispatchToProps = dispatch => {
     return {
-        changeTrak: (id) => dispatch({type: 'changeTrak', id: id})
+        changeTrak: (id) => dispatch({type: CHANGE_THIS_TRACK, id: id})
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(DropList)

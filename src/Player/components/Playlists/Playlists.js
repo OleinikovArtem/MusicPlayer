@@ -14,7 +14,7 @@ const initialState =  [
     {text: 'OLDSHCOOL', show: false},
     {text: 'BEAST', show: false},
 ]
-const Playlists = ({ theСhoiceTrack}) => {
+const Playlists = () => {
     const [state, setState] = useState(initialState)
 
     const handleDropdown = (index) => { 
@@ -30,7 +30,7 @@ const Playlists = ({ theСhoiceTrack}) => {
             <li><ListItem title='Playlists' url={iconPlaylists} /></li>
             {
                 state.map(({text, show}, i) => {
-                    let Droped = show ? <DropList  theСhoiceTrack={theСhoiceTrack} /> :  null
+                    let Droped = show ? <DropList  /> :  null
                     return (
                         <li key={text+i} onClick={ ()=> handleDropdown(i)}>
                             <ListItem title={text} url={''} />

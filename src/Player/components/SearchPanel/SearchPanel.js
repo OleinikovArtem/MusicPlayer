@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { connect } from 'react-redux'
+import { SEARCH } from '../../../store/types'
 import './SearchPanel.css'
 import iconSearch from './search67.png'
 
@@ -28,7 +29,7 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        searchTrack: (val) => dispatch({type: 'search', value: val})
+        searchTrack: (val) => dispatch({type: SEARCH, value: val})
     }
 }
 

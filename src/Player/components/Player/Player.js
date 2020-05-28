@@ -1,39 +1,33 @@
 import React , {useState,  useCallback, }from 'react'
 import ReactAudioPlayer from 'react-audio-player';
 import { connect } from 'react-redux'; 
+import { CHANGE_PLAY_TRACK } from '../../../store/types'
+import { changeProgressBar , transformTime} from '../../../store/reducer';
 import './Player.css'
-import { transformTime } from '../../Store/transformTime';
-import { changeProgressBar } from '../../Store/changeProgresBar';
+
 import VolumeControls from './components/VolumeControls';
 import TypePlayingMusick from './components/TypePlayingMusick';
 import TimeLine from './components/TimeLine';
 import Controls from './components/Controls';
 import TrackInfo from './components/TrackInfo';
 
-const Player = ({playTrack, playNextTrack}) => {
-console.log(playTrack)
+const Player = ({playTrack, playing, playNextTrack, repeat, muted, volume}) => {
     const [state , setState] = useState({
-        playing: false,
-        loaded: false,
-        loop: false,
-        mute: true,
-        volume: 0.1,
         fullTime: {
             minutes: '--',
             seconds: '--',
         },
         progresTime:'--',
-        repeat: false
     })
     
-    const { Track, artist, id, image,  url} = playTrack 
+    const {  id, url} = playTrack 
     const TimeList = useCallback((node)=> {
         if(node) {
             const current = node.audioEl.current
             const duration = current.duration
             const currentTime = current.currentTime
              
-            if(state.playing) {
+            if(playing) {
                 current.play()
             }else {
                 current.pause()
@@ -54,21 +48,6 @@ console.log(playTrack)
         })  
     }
 
-    const handleMutedTrack = () => {
-        setState((prevState) => {
-            return {
-                ...prevState,
-                mute: !state.mute
-            }
-        })
-    }
-
-    const changeVolume = (e) => {
-        const x = changeProgressBar(e) / 100
-        setState((prevState)=> {
-            return{ ...prevState, volume: x, mute: false}
-        })
-    }
 
     const changeCurrentTime = (e) => {
         const audio =  document.querySelector('.react-audio-player')
@@ -79,22 +58,15 @@ console.log(playTrack)
         audio.currentTime = nowTimeClick
     }
     
-    const handleRepeatTrack = () => {
-        setState((prevState) => ({
-            ...prevState,
-            repeat: !state.repeat
-        }))
-    }
-    
     return (
         <div className="Player">
               <ReactAudioPlayer style={{position: 'absolute', top: '-200%'}}
                     src={url}
                     autoPlay
-                    loop={state.repeat}
-                    muted={state.mute}
-                    volume={state.volume}
-                    ref={TimeList}
+                    loop={repeat}
+                    muted={muted}
+                    volume={volume}
+                    ref={  TimeList }
                     onEnded={()=> {playNextTrack(id)}}
                     />
 
@@ -111,19 +83,9 @@ console.log(playTrack)
                     changeCurrentTime={changeCurrentTime}
                     />
 
-                <TypePlayingMusick 
-                    // changeRandom={changeRandom}
-                    // random={context.random}
-                    repeat={state.repeat}
-                    handleRepeatTrack={handleRepeatTrack}
-                    />
+                <TypePlayingMusick />
             </div>
-                <VolumeControls 
-                    handleMutedTrack={handleMutedTrack} 
-                    mute={state.mute} 
-                    changeVolume={changeVolume} 
-                    volume={state.volume}
-                    />
+                <VolumeControls />
         </div>
     )
 }
@@ -131,12 +93,17 @@ console.log(playTrack)
 const mapStateToProps = state => {
 
     return {
-        playTrack :state.playTrack
+        playTrack: state.playTrack,
+        playing: state.playing,
+        volume: state.volume,
+        repeat: state.repeat,
+        muted: state.muted,
+
     }
 }
 const mapDispatchToProps = dispatch => {
     return {
-        playNextTrack: (id) => dispatch({type: 'CHANGE_PLAY_TRACK', id: id}) 
+        playNextTrack: (id) => dispatch({type: CHANGE_PLAY_TRACK , id: id}) 
 
     }
 }

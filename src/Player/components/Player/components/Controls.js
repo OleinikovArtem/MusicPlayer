@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { CHANGE_PLAY_TRACK } from '../../../../store/types'
+import { CHANGE_PLAY_TRACK, PLAY } from '../../../../store/types'
 
 const Controls = ({play, prevrack,nextTrack , playing  }) => {
 
@@ -29,7 +29,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = discpath => {
     return {
-        play : () => discpath({type: 'Play'}),
+        play : () => discpath({type: PLAY}),
         nextTrack: () => discpath({type: CHANGE_PLAY_TRACK, increment: '+' }),
         prevrack: () => discpath({type: CHANGE_PLAY_TRACK, increment: '-'}),
     }
